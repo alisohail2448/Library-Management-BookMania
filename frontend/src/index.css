@@ -1,0 +1,344 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg {
+  background-image: url("./assets/bbblurry\(1\).svg");
+  background-size: cover;
+  background-color: #07182e;
+  height: 100%;
+}
+
+.bg-modal {
+  background-color: #07182e;
+}
+
+.box {
+  /* min-width: 1300px; */
+  width: 1000px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+}
+
+.addBox {
+  width: 500px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+}
+
+.bookButton {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bookButton:active,
+.bookButton:hover {
+  outline: 0;
+}
+
+.bookButton span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(5, 6, 45);
+  padding: 12px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.bookButton:hover span {
+  background: none;
+}
+
+.bookButton:active {
+  transform: scale(0.9);
+}
+
+.navHeading {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  color: #fff;
+}
+
+.navFancy {
+  position: relative;
+  white-space: nowrap;
+}
+.navFancy:after {
+  --deco-height: 0.3125em;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--deco-height) * -0.625);
+  height: var(--deco-height);
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: auto 100%;
+  background-repeat: round;
+  background-position: 0em;
+}
+
+.heading {
+  position: absolute;
+  top: 18%;
+}
+
+.fancyHeading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.fancy {
+  position: relative;
+  white-space: nowrap;
+}
+.fancy:after {
+  --deco-height: 0.3125em;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--deco-height) * -0.625);
+  height: var(--deco-height);
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: auto 100%;
+  background-repeat: round;
+  background-position: 0em;
+}
+
+.subHeading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  background-image: linear-gradient(
+    293.5deg,
+    rgba(181, 149, 208, 1) 3.2%,
+    rgba(251, 148, 207, 1) 9.9%,
+    rgba(181, 149, 208, 1) 22.9%,
+    rgba(251, 148, 207, 1) 36.4%,
+    rgba(181, 149, 208, 1) 50.1%,
+    rgba(251, 148, 207, 1) 61.1%,
+    rgba(181, 149, 208, 1) 71.2%,
+    rgba(251, 148, 207, 1) 84.2%,
+    rgba(181, 149, 208, 1) 92.2%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.loginText {
+  background-image: linear-gradient(144deg, #d9abfa, #e868fc 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.loginBtn {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.loginBtn:active,
+.loginBtn:hover {
+  outline: 0;
+}
+
+.loginBtn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #07182e;
+  padding: 12px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.loginBtn:hover span {
+  background: none;
+}
+
+.loginBtn:active {
+  transform: scale(0.9);
+}
+
+
+
+
+
+
+.addBook {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.addBook:active,
+.addBook:hover {
+  outline: 0;
+}
+
+.addBook span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #07182e; */
+  padding: 12px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.addBook:hover span {
+  background: none;
+}
+
+.addBook:active {
+  transform: scale(0.9);
+}
+
+
+
+
+
+.addBookBtn {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid rgb(206, 137, 249);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+ }
+ 
+ .addBookBtn::before,
+ .addBookBtn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ .addBookBtn::before {
+  left: -10px;
+  background: #240046;
+ }
+ 
+ .addBookBtn::after {
+  right: -10px;
+  background: #5a189a;
+ }
+ 
+ .addBookBtn:hover::before,
+ .addBookBtn:hover::after {
+  width: 58%;
+ }
+ 
+ .addBookBtn:hover span {
+  color: white;
+  transition: 0.3s;
+ }
+ 
+ .addBookBtn span {
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
